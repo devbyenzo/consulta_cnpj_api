@@ -1,6 +1,5 @@
 import customtkinter as ctk
 import requests
-from PIL import Image, ImageTk
 
 
 janela = ctk.CTk()
@@ -9,9 +8,7 @@ janela.title("SERASA v2 BLOX FRUIT")
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
 
-bg_image = ctk.CTkImage(Image.open("dias.png"), size=(400, 600))
-bg_label = ctk.CTkLabel(janela, image=bg_image, text="")
-bg_label.place(relx=0, rely=0, relwidth=1, relheight=1)
+
 
 # - Função
 def consultar():
