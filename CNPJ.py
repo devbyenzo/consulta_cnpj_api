@@ -4,7 +4,7 @@ import requests
 
 janela = ctk.CTk()
 janela.geometry("400x600")
-janela.title("SERASA v2 BLOX FRUIT")
+janela.title("Consulta CPF/CNPJ")
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
 
@@ -25,7 +25,7 @@ def consultar():
     try:
         if tipo == "CPF":
             # CPFHub usa x-api-key e a URL é /cpf/{documento}
-            token = "89f2fcbe7ecadae218b8e3bb6928f9315c6e9b7165a195217c4846417e27a31b"
+            token = "SUA API AQUI"
             url = f"https://api.cpfhub.io/cpf/{documento}"
             headers = {"x-api-key": token} # Nome correto do header para CPFHub
             response = requests.get(url, headers=headers, timeout=15)
